@@ -13,5 +13,18 @@ namespace MiPrimeraWeb.RRHH
         {
 
         }
+
+        protected void btnGuardar_Click(object sender, EventArgs e)
+        {
+            string nombre = tBoxNom.Text;
+            //string rut = tBoxRut.Text;
+
+            List<string> nombres = new List<string>();
+
+            nombres.Add(nombre);
+
+           // tBoxRut.Text = tBoxNom.Text; enviar el valor a otro texbox
+
+        }
     }
 }

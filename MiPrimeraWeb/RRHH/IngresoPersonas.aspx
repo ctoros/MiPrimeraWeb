@@ -10,12 +10,12 @@
             <tr>
                 <td>Nombre:</td>
                 <td>
-                    <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="tBoxNom" runat="server"></asp:TextBox>
                 </td>                
             </tr>
             <tr>
-                <td>Edad:</td>
-                <td><asp:TextBox runat="server" ID="txtEdad"></asp:TextBox></td>                
+                <td>Rut:</td>
+                <td><asp:TextBox runat="server" ID="tBoxRut"></asp:TextBox></td>                
             </tr>
             <tr>
                 <td>Fono:</td>
@@ -31,10 +31,16 @@
         <tfoot>
             <tr>
                 <td colspan="2">
-                    <asp:Button ID="btnGuardar" runat="server" Text="Guardar Datos" /></td>
+                    <asp:Button ID="btnGuardar" runat="server" Text="Guardar Datos" OnClick="btnGuardar_Click" /></td>
             </tr>
         </tfoot>
 
+
+        <asp:GridView ID="GridView1" runat="server"></asp:GridView>
+
     </table>
+
+
+
 
 </asp:Content>
